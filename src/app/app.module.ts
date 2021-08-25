@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { ServicosComponent } from './components/servicos/servicos.component';
+import { ContatoComponent } from './components/contato/contato.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ServicosComponent } from './components/servicos/servicos.component';
     NavbarComponent,
     CarouselComponent,
     SobreComponent,
-    ServicosComponent
+    ServicosComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,
