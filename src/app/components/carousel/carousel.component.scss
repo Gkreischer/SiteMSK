@@ -13,3 +13,21 @@ img {
         font-size: 18px!important;
     }
 }
+
+.titulo {
+    z-index: 1;
+    position: absolute;
+    top: 10rem;
+    left: 5rem;
+    color: white;
+
+    h1 {
+        font-size: 80px;
+        @media screen and (max-width: 767px){
+            font-size: 42px;
+        }
+    }
+
+    
+}
+

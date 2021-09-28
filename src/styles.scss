@@ -2,3 +2,15 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;   
+}
+
+body {
+    font-family: 'Roboto', sans-serif!important;
+    height: 100%;
+}
