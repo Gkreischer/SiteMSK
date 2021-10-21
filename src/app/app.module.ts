@@ -12,6 +12,13 @@ import { ContatoComponent } from './components/contato/contato.component';
 import { LoginComponent } from './components/centralCliente/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { PaginaNaoEncontradaComponent } from './components/pagina-nao-encontrada/pagina-nao-encontrada.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HomeClientesComponent } from './components/centralCliente/home-clientes/home-clientes.component';
+import { NavbarClientesComponent } from './components/centralCliente/navbar-clientes/navbar-clientes.component';
+import { OrdensServicoComponent } from './components/centralCliente/ordens-servico/ordens-servico.component';
+import { DadosClientesComponent } from './components/centralCliente/dados-clientes/dados-clientes.component';
+import { HttpClientModule } from '@angular/common/http';
+import { EditaClienteComponent } from './components/centralCliente/dados-clientes/edita-cliente/edita-cliente.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +30,19 @@ import { PaginaNaoEncontradaComponent } from './components/pagina-nao-encontrada
     ContatoComponent,
     LoginComponent,
     HomeComponent,
-    PaginaNaoEncontradaComponent
+    PaginaNaoEncontradaComponent,
+    HomeClientesComponent,
+    NavbarClientesComponent,
+    OrdensServicoComponent,
+    DadosClientesComponent,
+    EditaClienteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
