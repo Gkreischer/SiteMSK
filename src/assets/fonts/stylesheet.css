@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Instrument Sans';
+    src: url('InstrumentSans-Regular.eot');
+    src: url('InstrumentSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('InstrumentSans-Regular.woff2') format('woff2'),
+        url('InstrumentSans-Regular.woff') format('woff'),
+        url('InstrumentSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

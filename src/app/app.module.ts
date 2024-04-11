@@ -1,50 +1,29 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CarouselComponent } from './components/carousel/carousel.component';
-import { SobreComponent } from './components/sobre/sobre.component';
-import { ServicosComponent } from './components/servicos/servicos.component';
-import { ContatoComponent } from './components/contato/contato.component';
-import { LoginComponent } from './components/centralCliente/login/login.component';
-import { HomeComponent } from './components/home/home.component';
-import { PaginaNaoEncontradaComponent } from './components/pagina-nao-encontrada/pagina-nao-encontrada.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import { HomeClientesComponent } from './components/centralCliente/home-clientes/home-clientes.component';
-import { NavbarClientesComponent } from './components/centralCliente/navbar-clientes/navbar-clientes.component';
-import { OrdensServicoComponent } from './components/centralCliente/ordens-servico/ordens-servico.component';
-import { DadosClientesComponent } from './components/centralCliente/dados-clientes/dados-clientes.component';
-import { HttpClientModule } from '@angular/common/http';
-import { EditaClienteComponent } from './components/centralCliente/dados-clientes/edita-cliente/edita-cliente.component';
+import { BannerComponent } from './_sections/banner/banner.component';
+import { NavbarComponent } from './_components/navbar/navbar.component';
+import { ServicesComponent } from './_sections/services/services.component';
+import { PartnersComponent } from './_sections/partners/partners.component';
+
+import { register } from 'swiper/element/bundle';
+
+register();
 
 @NgModule({
   declarations: [
     AppComponent,
+    BannerComponent,
     NavbarComponent,
-    CarouselComponent,
-    SobreComponent,
-    ServicosComponent,
-    ContatoComponent,
-    LoginComponent,
-    HomeComponent,
-    PaginaNaoEncontradaComponent,
-    HomeClientesComponent,
-    NavbarClientesComponent,
-    OrdensServicoComponent,
-    DadosClientesComponent,
-    EditaClienteComponent
+    ServicesComponent,
+    PartnersComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    ReactiveFormsModule,
-    HttpClientModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}

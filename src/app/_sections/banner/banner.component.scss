@@ -1,0 +1,18 @@
+.custom-height {
+  min-height: 800px;
+}
+
+img {
+  &.custom-height-desktop {
+    height: 100%;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 40px;
+}
+
+h1 {
+  font-size: 3.2rem;
+}

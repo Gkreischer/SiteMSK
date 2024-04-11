@@ -1,16 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-html {
-    scroll-behavior: smooth;
-    height: 100%;   
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("./assets/fonts/InstrumentSans-Regular.eot");
+  src: url("./assets/fonts/InstrumentSans-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/InstrumentSans-Regular.woff2") format("woff2"),
+    url("./assets/fonts/InstrumentSans-Regular.woff") format("woff"),
+    url("./assets/fonts/InstrumentSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
-    font-family: 'Roboto', sans-serif!important;
-    height: 100%;
+  font-family: "Instrument Sans", sans-serif;
 }
