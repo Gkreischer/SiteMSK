@@ -1,3 +1,35 @@
 .custom-height {
-  min-height: 300px;
+  min-height: 200px;
+}
+
+swiper-container {
+  height: 450px;
+}
+
+swiper-slide {
+  z-index: 1000;
+
+  img {
+    width: 300px;
+    border-radius: 50%;
+    margin-top: 45px;
+  }
+
+  &:hover {
+    animation: expand 1s forwards;
+  }
+
+  h5 {
+    padding-top: 25px;
+  }
+}
+
+@keyframes expand {
+  from {
+
+  }
+
+  to {
+    transform: scale(1.2);
+  }
 }
