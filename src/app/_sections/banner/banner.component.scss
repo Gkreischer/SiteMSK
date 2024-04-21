@@ -2,6 +2,66 @@
   min-height: 800px;
 }
 
+
+
+.custom-width-img-banner {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1366px) {
+  .custom-width-img-banner {
+    width: 180px;
+    height: 180px;
+  }
+
+  .custom-height {
+    min-height: 625px;
+  }
+  
+}
+
+@media screen and (min-width: 1367px) {
+  .custom-width-img-banner {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@keyframes rotate-effect {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes expand-breath-effect {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.expand-effect-breath:nth-child(1) {
+  animation: expand-breath-effect 1s infinite alternate;
+}
+
+.expand-effect-breath:nth-child(2) {
+  animation: expand-breath-effect 1s infinite alternate;
+  animation-delay: 0.5s; /* Atraso para a segunda imagem começar a animação */
+  top: 100px;
+  position: relative;
+}
+
+.expand-effect-breath:nth-child(3) {
+  animation: expand-breath-effect 1s infinite alternate;
+  animation-delay: 1s; /* Atraso para a terceira imagem começar a animação */
+}
+
 img {
   &.custom-height-desktop {
     height: 100%;

@@ -10,6 +10,9 @@ import { ServicesComponent } from './_sections/services/services.component';
 import { PartnersComponent } from './_sections/partners/partners.component';
 
 import { register } from 'swiper/element/bundle';
+import { ContactComponent } from './_sections/contact/contact.component';
+import { FormComponent } from './_sections/contact/components/form/form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 register();
 
@@ -20,8 +23,10 @@ register();
     NavbarComponent,
     ServicesComponent,
     PartnersComponent,
+    ContactComponent,
+    FormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
