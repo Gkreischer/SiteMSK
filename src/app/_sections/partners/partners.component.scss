@@ -21,12 +21,13 @@ swiper-slide {
 
   h5 {
     padding-top: 25px;
+    font-size: 1rem;
   }
 }
 
 @keyframes expand {
   from {
-
+    transform: scale(1.0);
   }
 
   to {

@@ -9,6 +9,11 @@
 }
 
 @media screen and (max-width: 1366px) {
+
+  .custom-margin-top {
+    margin-top: 5rem;
+  }
+
   .custom-width-img-banner {
     width: 180px;
     height: 180px;
@@ -69,8 +74,8 @@ img {
 }
 
 h2 {
-  font-size: 1.5rem;
-  line-height: 40px;
+  font-size: 1.3rem;
+  line-height: 35px;
 }
 
 h1 {
