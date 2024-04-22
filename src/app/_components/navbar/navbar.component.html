@@ -13,20 +13,21 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" [ngbScrollSpyMenu]="s">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" aria-current="page" href="#home" ngbScrollSpyItem="home">Home</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#partners">Parceiros</a>
+          <a class="nav-link" href="#partners" ngbScrollSpyItem="partners">Parceiros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#services">Serviços</a>
+          <a class="nav-link" href="#services" ngbScrollSpyItem="services">Serviços</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contato</a>
+          <a class="nav-link" href="#contact" ngbScrollSpyItem="contact">Contato</a>
         </li>
+        <pre style="position: fixed;">{{s.active}}</pre>
       </ul>
       <div class="d-flex">
         <img src="assets/images/logo.jpg" alt="logo" class="img-fluid custom-height rounded-circle" />

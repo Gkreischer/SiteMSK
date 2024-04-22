@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "mskinformatica:build:production"
+              "buildTarget": "mskinformatica:build:production"
             },
             "development": {
-              "browserTarget": "mskinformatica:build:development"
+              "buildTarget": "mskinformatica:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mskinformatica:build"
+            "buildTarget": "mskinformatica:build"
           }
         },
         "test": {

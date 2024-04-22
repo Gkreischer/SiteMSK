@@ -1,5 +1,7 @@
-<app-navbar></app-navbar>
-<app-banner></app-banner>
-<app-partners></app-partners>
-<app-services></app-services>
-<app-contact></app-contact>
+    <main ngbScrollSpy #s="ngbScrollSpy">
+        <app-navbar [s]="s"></app-navbar>
+        <app-banner ngbScrollSpyFragment="home"></app-banner>
+        <app-partners ngbScrollSpyFragment="partners"></app-partners>
+        <app-services ngbScrollSpyFragment="services"></app-services>
+        <app-contact ngbScrollSpyFragment="contact"></app-contact>
+    </main>
