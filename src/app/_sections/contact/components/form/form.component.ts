@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MaskitoOptions } from '@maskito/core';
+import { ContactService } from 'src/app/_services/contact.service';
+import { environment } from 'src/environments/environment.development';
 
 @Component({
   selector: 'app-form',
@@ -24,7 +26,8 @@ export class FormComponent implements OnInit {
   };
 
   constructor(
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private contactService: ContactService
   ) {
     
   }
@@ -44,6 +47,10 @@ export class FormComponent implements OnInit {
   }
 
   onSubmit() {
+    this.sendMessageWhatsapp();
+  }
 
+  sendMessageWhatsapp() {
+    this.contactService.sendMessageWhatsapp(environment.phoneWhatsapp, this.form.value.message);
   }
 }

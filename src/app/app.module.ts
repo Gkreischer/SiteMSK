@@ -14,6 +14,8 @@ import { ContactComponent } from './_sections/contact/contact.component';
 import { FormComponent } from './_sections/contact/components/form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaskitoDirective } from '@maskito/angular';
+import { B2bComponent } from './_sections/b2b/b2b.component';
+import { HttpClientModule } from '@angular/common/http';
 
 register();
 
@@ -26,8 +28,9 @@ register();
     PartnersComponent,
     ContactComponent,
     FormComponent,
+    B2bComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule, NgbScrollSpyModule, MaskitoDirective],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule, NgbScrollSpyModule, MaskitoDirective, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
