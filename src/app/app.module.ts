@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule, NgbScrollSpyModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCollapseModule, NgbModule, NgbScrollSpyModule } from '@ng-bootstrap/ng-bootstrap';
 import { BannerComponent } from './_sections/banner/banner.component';
 import { NavbarComponent } from './_components/navbar/navbar.component';
 import { ServicesComponent } from './_sections/services/services.component';
@@ -30,7 +30,7 @@ register();
     FormComponent,
     B2bComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule, NgbScrollSpyModule, MaskitoDirective, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule, NgbScrollSpyModule, NgbCollapseModule, MaskitoDirective, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
