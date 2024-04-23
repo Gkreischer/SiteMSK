@@ -2,9 +2,6 @@
   min-height: 800px;
 }
 
-.custom-top-padding-mobile {
-  margin-top: 60px;
-}
 
 .custom-width-img-banner {
   object-fit: cover;
@@ -31,7 +28,7 @@
 @media screen and (max-width: 768px) {
 
   .custom-top-padding-mobile {
-    margin-top: 100px;
+    margin-top: 0px;
   }
 
   .custom-margin-vertical-mobile {
