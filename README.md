@@ -4,10 +4,10 @@ Site desenvolvido para a empresa MSK Informática, que oferece serviços de repa
 
 ## Tecnologias Utilizadas
 
-Angular 17
-Bootstrap 5.3.3
-Ng-Bootstrap 16.0
-Github Pages
+- Angular 17
+- Bootstrap 5.3.3
+- Ng-Bootstrap 16.0
+- Github Pages
 
 ## Instalação
 
@@ -21,7 +21,7 @@ Basta executar '''npm run start'''
 
 Para projetos, ideias ou contribuição, favor entrar em contato pelo endereço https://gkdeveloper.com.br
 
-==========================================================================================================
+===========================================================================
 
 # MSK Informática website
 
