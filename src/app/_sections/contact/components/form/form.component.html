@@ -19,7 +19,7 @@
             </div>
             <div class="row text-center">
                 <div class="col">
-                    <button type="submit" class="btn btn-primary px-5">Enviar</button>
+                    <button [disabled]="!form.valid" type="submit" class="btn btn-primary px-5">Enviar</button>
                 </div>
             </div>
         </form>
