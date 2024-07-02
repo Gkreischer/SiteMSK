@@ -16,6 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MaskitoDirective } from '@maskito/angular';
 import { B2bComponent } from './_sections/b2b/b2b.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CreatorComponent } from './_sections/creator/creator.component';
 
 register();
 
@@ -28,7 +29,8 @@ register();
     PartnersComponent,
     ContactComponent,
     FormComponent,
-    B2bComponent
+    B2bComponent,
+    CreatorComponent
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule, NgbScrollSpyModule, NgbCollapseModule, MaskitoDirective, HttpClientModule],
   providers: [],
