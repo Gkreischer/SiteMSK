@@ -58,8 +58,8 @@
   }
 
   .custom-width-img-banner {
-    width: 180px;
-    height: 180px;
+    width: 80px;
+    height: 80px;
   }
 
   .custom-height {
@@ -68,7 +68,21 @@
   
 }
 
-@media screen and (min-width: 1367px) {
+@media screen and (min-width: 1367px) and (max-width: 1440px) {
+  .custom-width-img-banner {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1681px) {
+  .custom-width-img-banner {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media screen and (min-width: 1682px) and (max-width: 1920px) {
   .custom-width-img-banner {
     width: 250px;
     height: 250px;
